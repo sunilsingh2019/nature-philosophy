@@ -15,4 +15,10 @@
       max-width: 100%;
     }
   }
+
+  @media (max-width: 991px) {
+    &-logo {
+      max-width: 260px;
+    }
+  }
 }

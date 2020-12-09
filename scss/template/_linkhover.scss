@@ -15,4 +15,9 @@
         color: #fff;
         background-color: $color-green;
     }
+
+
+    @media (max-width: 991px) {
+        font-size: 18px;
+    }
 }
