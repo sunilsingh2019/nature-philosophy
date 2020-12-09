@@ -1,0 +1,15 @@
+.link-box {
+    display: inline-block;
+    font-family: $font-1;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 33.6px;
+    padding: 21.8px 31px 19px;
+    color: #fff;
+    background-color: $color-main;
+
+    &:hover {
+        color: #fff;
+        background-color: $color-green;
+    }
+}

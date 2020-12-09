@@ -1,0 +1,407 @@
+.section {
+    &-vidhero {
+        margin-top: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &-chalup {
+        padding: 115px 0 102px;
+    }
+
+    &-chalneed {
+        padding: 98px 0 128px;
+    }
+
+    &-signmeup {
+        padding: 167px 0 138px;
+    }
+
+    &-joinreceive {
+        padding: 101px 0 130px;
+    }
+
+    &-spotchallenge {
+        padding: 153px 0 125px;
+    }
+
+    &-countdown {
+        padding: 50px 0 66.5px;
+    }
+
+    &-joinnow {
+        padding: 23.5px 0 25px;
+
+        .container {
+            max-width: 100%;
+            padding: 0 0 0 257px;
+        }
+    }
+
+    &-faqs {
+        padding: 155px 0 255px;
+
+        .section-bg::after {
+            background-color: $color-main;
+            opacity: .83;
+        }
+    }
+
+    &-msgwarning {
+        padding: 64px 0;
+    }
+
+    &-testimonials {
+        padding: 144px 0;
+    }
+}
+
+.vidhero {
+    height: 500px;
+    overflow: hidden;
+
+    &::before {
+        z-index: 1;
+        content: "";
+        @include absoldefault;
+        background-color: #000;
+        opacity: .58;
+    }
+
+    &-bg {
+        z-index: 0;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    &-icon {
+        z-index: 1;
+        width: 78px;
+        height: 78px;
+        @include absolcenter;
+    }
+
+    &-sm {
+        position: relative;
+        width: 100%;
+        max-width: 1145px;
+        height: 576px;
+        @include margin-auto;
+
+        &::before {
+            opacity: .3;
+        }
+    }
+}
+
+.chalup {
+    .section-head {
+        margin-bottom: 73px;
+
+    }
+
+    &-card {
+        margin-bottom: 81.4px;
+
+        img {
+            height: 129px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 275px;
+            @include margin-auto;
+        }
+    }
+}
+
+.chalneed {
+    &-col {
+        padding: 15px;
+    }
+
+    &-card {
+        max-width: 285px;
+        @include margin-auto;
+
+        img {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-family: $font-1;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 9.6px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: $font-1;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        margin-top: 86.4px;
+
+        &-text {
+            padding-right: 137px;
+            max-width: 919px;
+
+            p {
+                font-family: $font-1;
+                font-size: 24px;
+                font-weight: 400;
+                letter-spacing: 1.2px;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-img {
+            width: 559px;
+            height: 329px;
+            overflow: hidden;
+            margin-left: auto;
+
+            img {
+                @include imgfit;
+            }
+        }
+    }
+}
+
+.signmeup {
+    &-row {
+        margin: 0 -40px;
+    }
+
+    &-col {
+        padding: 10px 40px;
+    }
+
+    &-img {
+        position: relative;
+        margin-left: 35px;
+        margin-bottom: 30px;
+
+        &::before {
+            content: "";
+            z-index: 0;
+            position: absolute;
+            top: 30px;
+            left: -35px;
+            width: 100%;
+            height: 100%;
+            background-color: $color-sub;
+        }
+
+        img {
+            z-index: 1;
+            position: relative;
+            max-width: 100%;
+            width: 727px;
+            height: 668px;
+            object-fit: cover;
+        }
+    }
+
+    &-cont {
+        p {
+            max-width: 467px;
+        }
+    }
+}
+
+.joinreceive {
+    .section-head {
+        margin-bottom: 98px;
+    }
+
+    &-card {
+        max-width: 360px;
+        @include margin-auto;
+
+        &-img {
+            width: 100%;
+            height: 245px;
+            overflow: hidden;
+
+            img {
+                @include imgfit;
+            }
+        }
+
+        &-icon {
+            z-index: 1;
+            position: relative;
+            width: 66px;
+            height: 66px;
+            line-height: 66px;
+            @include margin-auto;
+            margin-top: -33px;
+            margin-bottom: 9px;
+            border-radius: 50%;
+            background-color: $color-main;
+
+            img {
+                width: 23px;
+            }
+        }
+
+        &-text {
+            h3 {
+                font-family: $font-1;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 24px;
+                margin-bottom: 12.6px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.spotchallenge {
+    .heading {
+        // font-size: ;
+    }
+
+    p {
+        font-size: 51px;
+        font-weight: 700;
+    }
+}
+
+.countdown {
+    &-card {
+        p {
+            font-family: $font-1;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+
+            span {
+                font-size: 121px;
+                font-weight: 400;
+                display: block;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.joinnow {
+    .heading-alt {
+        margin-bottom: 57.6px;
+
+        span {
+            max-width: 240px;
+        }
+    }
+
+    &-boxes {
+        &-link {
+            .link-box {
+                font-size: 20px;
+                padding: 9px 38px;
+            }
+        }
+    }
+
+    &-card {
+        display: flex;
+        margin-bottom: 57px;
+
+        &-icon {
+            position: relative;
+            width: 64.8px;
+            height: 64.8px;
+            line-height: 64.8px;
+            background-color: $color-main;
+            border: 4px solid #B94A0D;
+            text-align: center;
+            border-radius: 50%;
+
+            img {
+                z-index: 1;
+                width: 27px;
+                @include absolcenter;
+            }
+        }
+
+        &-text {
+            padding-left: 27.3px;
+            width: calc(100% - 64.8px);
+
+            p {
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-img {
+        img {
+            height: 936px;
+        }
+    }
+}
+
+.faqs {
+    .section-head {
+        margin-top: 89px;
+
+        .divider-title {
+            margin-top: 40px;
+            border-bottom-color: #fff;
+        }
+    }
+
+    .vidhero {
+        margin-bottom: 270px;
+    }
+
+    .form-wrap .heading {
+        margin-bottom: 51px;
+    }
+
+    .button-white {
+        font-family: $font-1;
+        font-size: 28px;
+        font-weight: 400;
+        display: inline-block;
+        text-transform: uppercase;
+        text-align: center;
+        border-color: transparent;
+        cursor: pointer;
+        padding: 18.8px 60px;
+        margin-top: 51px;
+        transition: all .2s;
+
+        &:hover {
+            color: #fff;
+            background-color: $color-green;
+        }
+    }
+}
+
+.msgwarning {
+    p {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 38px;
+    }
+}

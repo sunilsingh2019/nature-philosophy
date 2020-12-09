@@ -1,0 +1,18 @@
+.header {
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  &-logo {
+    max-width: 365px;
+    @include margin-auto;
+    padding-top: 62px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
