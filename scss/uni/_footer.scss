@@ -1,124 +1,53 @@
 .footer {
-    color: #fff;
-    background-color: #000;
+    background-color: #F7F7F7;
 
     &-top {
-        padding: 80px 20px;
+        padding: 40px 0 29px;
+    }
 
-        &-col {
-            padding: 15px;
+    &-logo {
+        width: 405px;
+
+        img {
+            max-width: 100%;
         }
+    }
 
-        &-logo {
-            width: 200px;
-            margin-bottom: 50px;
-        }
+    &-tags {
+        font-family: $font-1;
+        font-size: 15px;
+        font-weight: 400;
 
-        &-social {
-            a {
-                display: inline-block;
-                width: 48px;
-                height: 48px;
-                line-height: 48px;
-                border-radius: 50%;
-                text-align: center;
-                margin-right: 8px;
-                background-color: #fff;
+        span {
+            color: $color-black-overlay;
+            display: inline-block;
 
-                &:hover {
-                    background-color: $color-main;
-                }
-            }
-        }
+            &:not(:last-child) {
+                &::after {
+                    content: "|";
+                    margin: 0 5px;
 
-        &-title {
-            color: $color-main;
-            font-size: 18px;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 60px;
-        }
-
-        &-list {
-            padding-left: 0;
-            margin-bottom: 0;
-            list-style-type: none;
-
-            li {
-                margin-bottom: 10px;
-
-                a {
-                    font-size: 21px;
-                }
-            }
-        }
-
-        &-form {
-            position: relative;
-
-            input {
-                font-size: 21px;
-                display: block;
-                width: 100%;
-                height: 63px;
-                padding: 18px 22px;
-                border: 0;
-                border-radius: 12px;
-            }
-
-            button[type="submit"] {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 60px;
-                height: 100%;
-                padding: 0;
-                background-color: transparent;
-                border: 0;
-                outline: none;
-                cursor: pointer;
-
-                img {
-                    width: 34px;
-                    height: 32px;
-                }
-
-                &:hover,
-                &:focus {
-                    outline: none;
                 }
             }
         }
     }
 
     &-bot {
-        font-family: $font-4;
-        padding: 10px 20px;
-        background-color: #707070;
+        padding: 22px 0;
+        background-color: #EFEFEF;
 
-        img {
-            width: 20px;
-            margin-left: 44px;
-        }
+        .spicy-broccoli {
+            span {
+                font-family: $font-4;
+                font-size: 15px;
+                font-weight: 400;
+            }
 
-        .copyright {
-            font-size: 15px;
-        }
-
-        .designedby {
-            font-size: 12px;
-        }
-    }
-
-    @media (max-width: 1600px) {
-        &-top {
-            &-list {
-                li {
-                    a {
-                        font-size: 18px;
-                    }
-                }
+            img {
+                width: 85px;
+                margin-left: 17px;
             }
         }
     }
+
 }

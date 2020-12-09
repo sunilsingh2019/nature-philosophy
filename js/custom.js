@@ -43,38 +43,49 @@ jQuery(document).ready(function ($) {
   });
 
 
-  $(".welcome-slider").slick({
+  // $(".welcome-slider").slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   infinite: true,
+  //   arrows: true,
+  //   dots: false,
+  //   autoplay: true,
+  //   autoplaySpeed: 7000,
+  // });
+
+  $(".followus-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 7000,
-  });
-
-  $(".recipes-slider").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    arrows: true,
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 7000,
-  });
-
-  $(".review-slider").slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    infinite: true,
-    arrows: false,
     dots: true,
     autoplay: true,
     autoplaySpeed: 7000,
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="48.147" height="48.146" viewBox="0 0 48.147 48.146"> <g id="Group_1880" data-name="Group 1880" transform="translate(2160.633 -1434.252) rotate(180)"> <circle id="Ellipse_2" data-name="Ellipse 2" cx="23.573" cy="23.573" r="23.573" transform="translate(2112.987 -1481.899)" fill="none" stroke="#e55100" stroke-miterlimit="10" stroke-width="1"/> <path id="Path_5" data-name="Path 5" d="M740.173,231.236l-5.538,6.383c-.686.789-1.829-.363-1.148-1.148l5.066-5.837-5.066-5.837c-.681-.785.462-1.937,1.148-1.147l5.538,6.383a.984.984,0,0,1,0,1.2Z" transform="translate(1399.73 -1688.959)" fill="#e55100"/> </g></svg></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="48.147" height="48.146" viewBox="0 0 48.147 48.146"> <g id="Group_1879" data-name="Group 1879" transform="translate(-2112.487 1482.399)"> <circle id="Ellipse_2" data-name="Ellipse 2" cx="23.573" cy="23.573" r="23.573" transform="translate(2112.987 -1481.899)" fill="none" stroke="#e55100" stroke-miterlimit="10" stroke-width="1"/> <path id="Path_5" data-name="Path 5" d="M740.173,231.236l-5.538,6.383c-.686.789-1.829-.363-1.148-1.148l5.066-5.837-5.066-5.837c-.681-.785.462-1.937,1.148-1.147l5.538,6.383a.984.984,0,0,1,0,1.2Z" transform="translate(1399.73 -1688.959)" fill="#e55100"/> </g></svg></button>',
+  });
+
+  $(".testimonials-slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    infinite: true,
+    arrows: true,
+    dots: true,
+    autoplay: false,
+    autoplaySpeed: 70000,
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="48.147" height="48.146" viewBox="0 0 48.147 48.146"> <g id="Group_1880" data-name="Group 1880" transform="translate(2160.633 -1434.252) rotate(180)"> <circle id="Ellipse_2" data-name="Ellipse 2" cx="23.573" cy="23.573" r="23.573" transform="translate(2112.987 -1481.899)" fill="none" stroke="#e55100" stroke-miterlimit="10" stroke-width="1"/> <path id="Path_5" data-name="Path 5" d="M740.173,231.236l-5.538,6.383c-.686.789-1.829-.363-1.148-1.148l5.066-5.837-5.066-5.837c-.681-.785.462-1.937,1.148-1.147l5.538,6.383a.984.984,0,0,1,0,1.2Z" transform="translate(1399.73 -1688.959)" fill="#e55100"/> </g></svg></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="48.147" height="48.146" viewBox="0 0 48.147 48.146"> <g id="Group_1879" data-name="Group 1879" transform="translate(-2112.487 1482.399)"> <circle id="Ellipse_2" data-name="Ellipse 2" cx="23.573" cy="23.573" r="23.573" transform="translate(2112.987 -1481.899)" fill="none" stroke="#e55100" stroke-miterlimit="10" stroke-width="1"/> <path id="Path_5" data-name="Path 5" d="M740.173,231.236l-5.538,6.383c-.686.789-1.829-.363-1.148-1.148l5.066-5.837-5.066-5.837c-.681-.785.462-1.937,1.148-1.147l5.538,6.383a.984.984,0,0,1,0,1.2Z" transform="translate(1399.73 -1688.959)" fill="#e55100"/> </g></svg></button>',
     responsive: [{
       breakpoint: 991,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 2,
+        sliderToScroll: 2
+      }
+    }, {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        sliderToScroll: 1
       }
     }, ]
   });
@@ -123,10 +134,8 @@ jQuery(document).ready(function ($) {
     if ($("#menu").hasClass("active")) {
       $("html").addClass("overflowYStop");
       $(".side-menu-bg").addClass("active").animate({
-          opacity: 1,
-        },
-        400
-      );
+        opacity: 1,
+      }, 400);
     } else {
       $("html").removeClass("overflowYStop");
       $("#menu").removeClass("active");

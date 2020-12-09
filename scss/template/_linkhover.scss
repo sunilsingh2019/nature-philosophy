@@ -7,6 +7,9 @@
     padding: 21.8px 31px 19px;
     color: #fff;
     background-color: $color-main;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
 
     &:hover {
         color: #fff;

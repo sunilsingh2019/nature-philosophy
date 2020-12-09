@@ -54,6 +54,10 @@
     &-testimonials {
         padding: 144px 0;
     }
+
+    &-jointribe {
+        padding: 122px 0 144px;
+    }
 }
 
 .vidhero {
@@ -403,5 +407,207 @@
         font-size: 34px;
         font-weight: 400;
         line-height: 38px;
+    }
+}
+
+.testimonials {
+    .vidhero {
+        margin-bottom: 255px;
+    }
+
+    &-slider {
+        margin: 0 -17px;
+
+        &-wrap {}
+
+        .slick {
+            &-list {
+                max-width: 1010px;
+                @include margin-auto;
+
+            }
+
+            &-slide {
+                @media (min-width: 992px) {
+                    &:nth-child(3n) .testimonials-card::after {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    &:nth-child(2n) .testimonials-card::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &-card {
+        position: relative;
+        padding: 0 17px;
+        text-align: center;
+
+        &::after {
+            content: "";
+            @include absoltopcenter;
+            right: 0;
+            width: 2px;
+            height: 158px;
+            background-color: $color-main;
+        }
+
+        &-img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 33px;
+            @include margin-auto;
+        }
+
+        &-comment {
+            max-width: 290px;
+            @include margin-auto;
+            margin-bottom: 13px;
+
+            p {
+                font-family: $font-1;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 5px;
+            }
+        }
+
+        &-author {
+            font-family: $font-3;
+            font-size: 16px;
+            font-weight: 700;
+
+            &::before {
+                content: "";
+                display: block;
+                margin: 19px auto 16px;
+                width: 40px;
+                border-bottom: 2px solid $color-main;
+            }
+        }
+    }
+}
+
+.followus {
+    max-width: 1400px;
+    @include margin-auto;
+
+    .heading-alt {
+        margin-bottom: 17px;
+    }
+
+    &-row {
+
+        &,
+        &-inner {
+            margin: -9px;
+        }
+    }
+
+    &-col {
+
+        &,
+        &-inner {
+            padding: 9px;
+        }
+    }
+
+    &-card {
+        position: relative;
+        height: 250px;
+
+        &-lg {
+            height: 521px;
+        }
+
+        &-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                @include imgfit;
+            }
+        }
+    }
+}
+
+.jointribe {
+    .heading {
+        margin-bottom: 130px;
+
+        &-sidebar {
+            span {
+                padding: 40px;
+                padding-left: 0;
+            }
+        }
+    }
+
+    &-box {
+        margin-bottom: 83px;
+
+        .heading-sub {
+            margin-bottom: 35px;
+        }
+    }
+
+    &-table {
+        font-family: $font-1;
+        width: 100%;
+        margin-bottom: 72px;
+
+        tr {
+            border-bottom: 2px solid #707070;
+
+            td {
+                &:first-child {
+                    width: 50%;
+                    white-space: nowrap;
+                    padding-left: 75px;
+                }
+
+                &:nth-child(n+2) {
+                    width: 16.6667%;
+                }
+
+                &:last-child {
+                    width: 200px;
+                    padding-right: 75px;
+                }
+            }
+        }
+
+        thead {
+            font-size: 25px;
+            font-weight: 600;
+
+            tr {
+                border-top: 2px solid #707070;
+
+                td {
+
+                    padding: 20px 0;
+                }
+            }
+        }
+
+        tbody {
+            font-size: 25px;
+            font-weight: 400;
+
+            tr {
+                td {
+                    padding: 35px 0;
+                }
+            }
+        }
     }
 }
