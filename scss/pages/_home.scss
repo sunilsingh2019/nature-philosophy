@@ -495,24 +495,34 @@
 }
 
 .followus {
-    max-width: 1400px;
-    @include margin-auto;
+    // max-width: 1400px;
+    // @include margin-auto;
+
+    .section-head{
+        margin-bottom: 17px;
+    }
+
+    &-slider .slick-list,.section-head {
+            max-width: 1410px;
+            margin-left: auto;
+            margin-right: auto;
+    }
 
     .heading-alt {
         margin-bottom: 17px;
     }
 
     &-row {
-
-        &,
+        margin: 0 -9px;
+        
         &-inner {
             margin: -9px;
         }
     }
 
     &-col {
+        padding: 0 9px;
 
-        &,
         &-inner {
             padding: 9px;
         }
